@@ -1,0 +1,112 @@
+/* Custom CSS for Portfolio Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: transparent;
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #1A4D2E;
+    margin-top: -40px;
+    text-align: center; /* Letakkan teks di tengah */
+    line-height: 1.5; /* Atur ketinggian baris */
+    margin-bottom: 20px; /* Spasi bawah */
+    margin-right: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header::before,
+header::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    height: 500px;
+}
+
+header::before {
+    left: 0;
+    background-color: #E8DFCA;
+    width: 30%;
+}
+
+header::after {
+    right: 0;
+    background-color: #1A4D2E;
+    width: 50%;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Susun vertikal */
+    align-items: flex-end; /* Letakkan ke kanan */
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Main Content */
+.container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #1A4D2E;
+}
+
+.portfolio-item {
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #E8DFCA;
+    width: 1000px;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 250px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1A4D2E;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
